@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div  class="video-background">
+        <video id="part1"  autoplay muted>
+            <source src="bg-part1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video id="part2" autoplay muted loop>
+            <source src="bg-part2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+    </div>
+    
+    <aside id="popular">
+        <video  autoplay muted loop>
+            <source src="most popular video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="caption">most popular video this year</p>
+    </aside>
+    <aside id="vicky">
+        <video  autoplay muted loop>
+            <source src="vicky.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="caption">Vicky</p>
+    </aside>
+
+    <div class="content" id="content">
+        <div class="animation-container">
+            <h1 class="happy-birthday">Happy Birthday, Sweetie!</h1>
+        </div>
+        <section class="confession">
+            <p>
+                T3adda 3am tawa meli hkina Seniorita! 3am bennesba lik meli2 bennajahat! 3am netsawrou kif ela3wam elli 9ablou extraordinaire bennesba lik.
+                Najaht fi tiktok whottit rouhek fi tarik ennajeh felmarketing w njaht fi kraytek, wzid 3malt awel masrahia lik! w berraghm medecipline elli lezem tkaddmou lkoll bkit spontanné w mali2a belhayat.
+                Enti namoudhaj! Ena t2akkadet elli berrasmi maritech chkoun kifek wkif elprofile mte3ek ye3ni chakhseytek w ahdafek w mouhitek.
+                Ykounli echaraf ennou nkoun fi hyet wmedhabeya nkoun fiha dima! Ena nheb ennou n3awnou b3adhna wnes2lou 3la b3adhna koll youm
+                wenkounou sanad leb3adhna bech nouslou elahdefna! Ena nheb nkoun l'âme-soeur mte3ek! Happy birthday sweetie! winchallah dima hayetek tkoun ajmal wnkoun ena joz2 jamil wa manba3 jamal fiha!
+            </p>
+        </section>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        document.getElementById("part1").style.opacity = "0";
+     
+        document.querySelectorAll("aside")[0].style.opacity = "1";
+   
+
+        document.getElementById("part2").style.opacity = "1";
+    }, 8000);
+});
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+
+        document.querySelectorAll("aside")[1].style.opacity = "1";
+
+    }, 10000);
+});
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+
+        document.getElementById("content").style.opacity = "1";
+
+    }, 12000);
+});
+
+
+
+    </script>
+</body>
+</html>
